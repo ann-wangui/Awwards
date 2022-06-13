@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 
-import django_heroku
 from pathlib import Path
 import cloudinary.api
 import os
