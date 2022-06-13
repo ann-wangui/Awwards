@@ -21,7 +21,7 @@ class PostTest(TestCase):
     def setUp(self):
         self.user = User.objects.create(id=1, username='anne')
         self.post = Post.objects.create(id=1, title='test post', photo='/media/images/home-img.png', description='the one',
-                                        user=self.user, url='kelord-blog.herokuapp.com/')
+                                        user=self.user, url='kelord.herokuapp.com/')
 
     def test_instance(self):
         self.assertTrue(isinstance(self.post, Post))
@@ -51,7 +51,7 @@ class RatingTest(TestCase):
     def setUp(self):
         self.user = User.objects.create(id=1, username='ann')
         self.post = Post.objects.create(id=1, title='test post', photo='/media/images/home-img.png', description='the one',
-                                        user=self.user, url='kelord-blog.herokuapp.com/')
+                                        user=self.user, url='kelord.herokuapp.com/')
         self.rating = Rating.objects.create(id=1, design=6, usability=7, content=9, user=self.user, post=self.post)
 
     def test_instance(self):
